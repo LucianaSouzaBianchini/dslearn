@@ -15,7 +15,7 @@ import com.devsuperior.dslearnbds.services.UserService;
 public class UserResource {
 	
 	@Autowired
-	UserService service;
+	private UserService service;
 
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<UserDTO> findById(@PathVariable Long id){
